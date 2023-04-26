@@ -5,10 +5,12 @@ window.onload = function () {
 function init() {
     alert('Hello players');
     const name = prompt('Please enter your name');
-    const figure = prompt('Please select rock/scissors/paper');
+    let figure = prompt('Please select rock/scissors/paper');
+    figure = figure.replace(' ', '');
+    figure = figure.toLowerCase();
     if (figure != 'rock' && figure != 'scissors' && figure != 'paper') 
     {
-        alert('you entered' + figure + 'which is not correct')
+        alert(`you entered ${figure} which is not correct`)
     };
     var words = ['rock', 'paper', 'scissors'];
     var word = words[Math.floor(Math.random() * words.length)];
