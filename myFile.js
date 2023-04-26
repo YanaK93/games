@@ -8,7 +8,7 @@ function init() {
     const figure = prompt('Please select rock/scissors/paper');
     if (figure != 'rock' && figure != 'scissors' && figure != 'paper') 
     {
-        alert('check not passed')
+        alert('you entered' + figure + 'which is not correct')
     };
     var words = ['rock', 'paper', 'scissors'];
     var word = words[Math.floor(Math.random() * words.length)];
